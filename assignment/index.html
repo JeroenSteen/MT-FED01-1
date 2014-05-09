@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type='text/javascript' src="assignment.js"></script>
+	</head>
+	
+	<style>
+		input, textarea{
+			display: block;
+			width: 500px;
+		}
+	</style>
+	
+	<body>
+	
+	<div style="width: 500px; margin: 0 auto;">
+		<div id="codes">
+			<div class="code">
+				<span>Titel</span>
+				<pre>
+				Text in a pre element
+				is displayed in a fixed-width
+				font, and it preserves
+				both      spaces and
+				line breaks
+				</pre>
+			</div>
+		</div>
+		
+		<div style=" margin-top: 20px;">
+			<div style="border: 1px solid #ccc; height: 200px;">
+				<strong>Code item</strong>
+				<p>Text in a pre element
+				is displayed in a fixed-width
+				font, and it preserves
+				both      spaces and
+				line breaks</p>
+			</div>
+		</div>
+		
+		<form>
+		<label for="titel">Titel</label>
+		<input id="titel" type="text" placeholder="Titel"/>
+		<textarea id="textspace" rows="4" cols="50" style="margin: 0; padding: 0;">Nieuwe code toevoegen?</textarea>
+		<div style="text-align: center;">
+			<button id="add">Voeg toe</button>
+		</div>
+		</form>
+	</div>
+	
+	</body>
+</html>
