@@ -4,12 +4,12 @@ var createAthlete = function(name){
 	var athletes = [];
 
 	//call > this, meerdere objecten
-	[0,1,2,3].forEach.call(athletes, function(element,index,array){
+	[].forEach.call(athletes, function(element,index,array){
 		console.log(index);
 	});
 	
 	//Object literal
-	var athlete = {}; 
+	var athlete = {};
 	
 	Object.defineProperties(athlete, {
 		//_name = Data property
