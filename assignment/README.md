@@ -13,3 +13,9 @@ is het mogelijk om de volgende attributen aan te geven:
 - Opdrachtgever
 - Naam project
 - Website
+
+Het is mogelijk om per opdrachtgever de volgende attributen op te geven:
+- Naam opdrachtgever
+- Bedrijf
+- Email
+- Website
