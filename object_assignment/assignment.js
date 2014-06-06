@@ -31,7 +31,7 @@ var Car = function(){
 	this.weigth,
 	this.licenseplate
 }
-Car.prototype = new Transport();
+Car.prototype = new Transport(); //Car.prototype = Object.create(Transport.prototype); call/apply
 Car.prototype.constructor = Car;
 
 var Ship = function(){

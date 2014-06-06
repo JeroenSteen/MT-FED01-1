@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script type='text/javascript' src="underscore.js"></script>
+		
+		<!-- Data -->
+		<script type='text/javascript' src="main.js"></script>
+	</head>
+	
+	<body>
+	
+	
+	<div id="articles"></div>
+	
+
+	<script>
+		var d = ['moe', 'curly', 'larry']; // Data
+		var t = "<% _.each(d, function(d) { %> <li><%= d %></li> <% }); %>"; //Template
+		console.log(_.template(t, d)); //Functie
+		
+		
+		/*
+		
+		var articleTemplate = $.get("templates/article.html", function(articleTemplate){
+			console.log(articleTemplate);
+			
+			//console.log(articles);
+			
+			//var template = "<% _.each(data, function(data) { %> <li><%= data.title %></li> <% }); %>";
+		
+			console.log(_.template(articleTemplate, articles));
+		});	*/
+	</script>
+	
+	</body>
+</html>
