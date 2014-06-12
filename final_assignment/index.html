@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- Dependencies -->
+		<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script type='text/javascript' src="js/vendor/underscore.js"></script>
+		
+		<link href="css/css.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+	
+	
+	<div id="articles"></div>
+	
+	<div style="width: 500px; margin: 0 auto;">
+	
+		<div class="codes"></div>
+	
+	
+		<!--
+		<div id="codes">
+			<div class="code">
+				<span>Titel</span>
+				<pre>
+				Text in a pre element
+				is displayed in a fixed-width
+				font, and it preserves
+				both      spaces and
+				line breaks
+				</pre>
+			</div>
+		</div>
+		
+		<div style=" margin-top: 20px;">
+			<div style="border: 1px solid #ccc; height: 200px;">
+				<strong>Code item</strong>
+				<p>Text in a pre element
+				is displayed in a fixed-width
+				font, and it preserves
+				both      spaces and
+				line breaks</p>
+			</div>
+		</div>
+		-->
+		
+		<form>
+			<label for="titel">Titel</label>
+			<input id="titel" type="text" placeholder="Titel" value="Titel"/>
+			<textarea id="textspace" rows="4" cols="50" style="margin: 0; padding: 0;">Nieuwe code toevoegen?</textarea>
+			<div style="text-align: center;">
+				<button id="add">Voeg toe</button>
+			</div>
+		</form>
+		
+	</div>
+
+	
+	<!-- Data -->
+	<script type='text/javascript' src="js/getData.js"></script>
+	<script type='text/javascript' src="js/assignment.js"></script>
+		
+	<script>
+		//var d = ['moe', 'curly', 'larry']; // Data
+		//var t = "<% _.each(d, function(d) { %> <li><%= d %></li> <% }); %>"; //Template
+		//console.log(_.template(t, d)); //Functie
+		
+		
+		/*
+		
+		var articleTemplate = $.get("templates/article.html", function(articleTemplate){
+			console.log(articleTemplate);
+			
+			//console.log(articles);
+			
+			//var template = "<% _.each(data, function(data) { %> <li><%= data.title %></li> <% }); %>";
+		
+			console.log(_.template(articleTemplate, articles));
+		});	*/
+	</script>
+	
+	</body>
+</html>
