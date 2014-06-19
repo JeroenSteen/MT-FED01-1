@@ -1,20 +1,36 @@
 var snippets = [
     {
-        name: "Pre example",
-        raw: "Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks",
+        title: "Pre example",
+        raw: "Text in a pre element\n is displayed in a fixed-width\n font, and it preserves\n both      spaces and\n line breaks",
         langs: ["html"],
 		freelance: 0
     },
     {
-        name: "Pre example",
+        title: "Php echo",
         raw: "<?php $name = 'Jeroen'; echo $name;?>",
         langs: ["php"],
 		freelance: 1
-    },
+    }
 ];
 
 $.get("js/templates/snippet.html", function(template) {
-	var result = "<% _.each(snippets, function(snippet) { %> _.template(template, snippet); <% }); %>"; //Template
-	console.log(result);
+    //Compile template voor gebruik met Handlebars
+    var template = Handlebars.compile(template);
+
+    //String var voor alle rendered templates
+    var t = "";
+
+    //Doorloop alle snippets
+    for(var key in snippets){
+        //Mustache geprobeerd; doet auto html escaping ( bij php :( )
+        //var output = Mustache.render(template, snippets[key]);
+        //console.log(output);
+
+        //Haal de snippet door template; render save in t
+        t = t + template(snippets[key]);
+    }
+
+    console.log(t);
+    $("#codes").html(t);
 });
 
