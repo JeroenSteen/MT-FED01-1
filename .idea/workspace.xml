@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c044723-4e2c-4b94-9719-b29d72bb8eb0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/final_assignment/js/assignment.js" afterPath="$PROJECT_DIR$/final_assignment/js/assignment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/final_assignment/js/getData.js" afterPath="$PROJECT_DIR$/final_assignment/js/getData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/final_assignment/index.html" afterPath="$PROJECT_DIR$/final_assignment/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/final_assignment/js/templates/snippet.html" afterPath="$PROJECT_DIR$/final_assignment/js/templates/snippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/final_assignment/js/vendor/underscore.js" afterPath="$PROJECT_DIR$/final_assignment/js/vendor/underscore.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\MT-FED01-1\final_assignment\js\clientObject.js" afterPath="$PROJECT_DIR$/final_assignment/js/objects/clientObject.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\MT-FED01-1\final_assignment\js\projectObject.js" afterPath="$PROJECT_DIR$/final_assignment/js/objects/projectObject.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\MT-FED01-1\final_assignment\js\snippetObject.js" afterPath="$PROJECT_DIR$/final_assignment/js/objects/snippetObject.js" />
     </list>
     <ignored path="MT-FED01-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +36,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="assignment.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/final_assignment/js/assignment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="23" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="1156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="clientObject.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/final_assignment/js/clientObject.js">
+        <entry file="file://$PROJECT_DIR$/final_assignment/js/objects/clientObject.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="55" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
               <folding>
@@ -49,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/final_assignment/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1207">
+            <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-0.55487806" vertical-offset="551" max-vertical-offset="1207">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="getData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/final_assignment/js/getData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.037351444" vertical-offset="0" max-vertical-offset="924">
+            <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
               <folding />
             </state>
           </provider>
@@ -99,9 +106,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
-    <option name="y" value="211" />
+    <option name="y" value="118" />
     <option name="width" value="1923" />
-    <option name="height" value="764" />
+    <option name="height" value="857" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -179,28 +186,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MT-FED01-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MT-FED01-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="final_assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -219,6 +204,11 @@
         </serverdata>
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\MT-FED01-1\final_assignment\js\objects" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -246,7 +236,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="211" width="1923" height="764" extended-state="0" />
+    <frame x="1" y="118" width="1923" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -255,7 +245,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13228346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13963255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -310,12 +300,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_assignment/js/clientObject.js">
+    <entry file="file://$PROJECT_DIR$/final_assignment/js/objects/clientObject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="55" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_assignment/js/templates/snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04613297" vertical-offset="0" max-vertical-offset="737">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -328,33 +325,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/final_assignment/js/assignment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="23" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.44954127" vertical-offset="665" max-vertical-offset="1428">
+        <state line="48" column="23" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_assignment/js/templates/snippet.html">
+    <entry file="file://$PROJECT_DIR$/final_assignment/js/getData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04613297" vertical-offset="0" max-vertical-offset="737">
+        <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/final_assignment/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1207">
+        <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-0.55487806" vertical-offset="551" max-vertical-offset="1207">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/final_assignment/js/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.037351444" vertical-offset="0" max-vertical-offset="924">
-          <folding />
         </state>
       </provider>
     </entry>
