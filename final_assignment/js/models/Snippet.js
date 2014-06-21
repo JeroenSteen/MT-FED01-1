@@ -3,8 +3,21 @@
 //Langs		= Programmeertalen die gebruikt zijn bij snippet		(Array)
 //Freelance	= Freelance oftewel vrij werk of in opdracht gemaakt	(Boolean)	
 
-var Snippet = function(name, raw, langs, freelance){
-	
+//name, raw, langs, freelance
+App.Models.Snippet = Backbone.Model.extend({
+
+    defaults:{
+        name: "Nameless Snippet",
+        raw: "<code>I am RAW!</code>",
+        langs: "php, js",
+        freelance: 0
+
+    },
+    initialize:function(){
+
+    }
+
+	/*
 	//Properties voor Name variable
 	Object.defineProperty(this, "name",{
 		get:function(){
@@ -49,5 +62,7 @@ var Snippet = function(name, raw, langs, freelance){
 		},
 		enumarable: true
 	});
-	
-}
+     ,*/
+
+
+});

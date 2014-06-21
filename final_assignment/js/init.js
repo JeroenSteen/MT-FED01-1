@@ -1,7 +1,11 @@
 (function(){
+
 	window.App = {
+        $document : $(document),
+        Views: {},
 		Models: {},
-		Views: {},
+        Collections: {},
 		Events: _.clone(Backbone.Events)
 	};
+
 })();
