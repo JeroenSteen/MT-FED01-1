@@ -16,6 +16,13 @@ App.Views.Snippet = Backbone.View.extend({
         //console.log(this.$el.html(template));
 
         return this;
+    },
+    events:{
+        'change select' : 'save',
+        'click button' : 'save'
+    },
+    save: function(e){
+        console.log(e);
     }
 
 });

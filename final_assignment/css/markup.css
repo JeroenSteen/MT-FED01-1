@@ -1,0 +1,23 @@
+.descr {
+  font-family: "Alef", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dn {
+  display: none !important;
+}
+
+.db {
+  display: block !important;
+}
+
+.tn {
+  text-decoration: none !important;
+}
+
+.t-white {
+  color: white;
+}
+
+.t-black {
+  color: black;
+}

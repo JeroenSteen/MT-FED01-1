@@ -1,0 +1,5 @@
+.frame {
+  -webkit-box-shadow: rgba(102, 102, 102, 0.1) 1px 1px 20px inset;
+  -moz-box-shadow: rgba(102, 102, 102, 0.1) 1px 1px 20px inset;
+  box-shadow: rgba(102, 102, 102, 0.1) 1px 1px 20px inset;
+}

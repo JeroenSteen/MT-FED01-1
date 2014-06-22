@@ -14,7 +14,6 @@ App.Models.Snippet = Backbone.Model.extend({
 
     },
     initialize:function(){
-
     }
 
 	/*

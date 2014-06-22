@@ -1,76 +1,121 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href="css/css.css" rel="stylesheet" type="text/css">
-	</head>
-	
-	<body>
-	
-	<div style="width: 500px; margin: 0 auto;">
-	
-		<div id="codes"></div>
-	
-	
-		<!--
-		<div id="codes">
-			<div class="code">
-				<span>Titel</span>
-				<pre>
-				Text in a pre element
-				is displayed in a fixed-width
-				font, and it preserves
-				both      spaces and
-				line breaks
-				</pre>
-			</div>
-		</div>
-		
-		<div style=" margin-top: 20px;">
-			<div style="border: 1px solid #ccc; height: 200px;">
-				<strong>Code item</strong>
-				<p>Text in a pre element
-				is displayed in a fixed-width
-				font, and it preserves
-				both      spaces and
-				line breaks</p>
-			</div>
-		</div>
-		-->
-		
-		<form>
-			<label for="titel">Titel</label>
-			<input id="titel" type="text" placeholder="Titel" value="Titel"/>
-			<textarea id="textspace" rows="4" cols="50" style="margin: 0; padding: 0;">Nieuwe code toevoegen?</textarea>
-			<div style="text-align: center;">
-				<button id="add">Voeg toe</button>
-			</div>
-		</form>
-		
-	</div>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/kseleton.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/markup.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link href="css/button.css" rel="stylesheet" type="text/css">
+    <link href="css/feedback.css" rel="stylesheet" type="text/css">
+    <link href="css/frame.css" rel="stylesheet" type="text/css">
 
-	<!-- Dependencies -->
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/vendor/mustache.js"></script>
-    <script src="js/vendor/handlebars.js"></script>
-	<script src="js/vendor/underscore.js"></script>
-	<script src="js/vendor/backbone.js"></script>
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
 
-    <!-- Init; Models -->
-	<script src="js/init.js"></script>
-    <script src="js/helpers/getTemplate.js"></script>
-    <script src="js/models/Client2.js"></script>
-    <script src="js/models/Project3.js"></script>
-    <script src="js/models/Snippet.js"></script>
+<body>
 
-    <script src="js/collections/Snippets.js"></script>
+<div class="container frame mt-30">
 
-    <script src="js/views/Snippet.js"></script>
-    <script src="js/views/Snippets.js"></script>
-	
-	<!-- Data -->
-	<script type='text/javascript' src="js/main.js"></script>
-	<script type='text/javascript' src="js/assignment.js"></script>
-	
-	</body>
+    <div class="col8 col alpha mt-50">
+
+        <div class="pl-10" id="codes"></div>
+
+
+    </div>
+
+    <div class="col8 col omega mt-50">
+
+        <form>
+            <h2>Snippet</h2>
+            <label for="titel">Titel</label>
+            <input id="titel" type="text" placeholder="Titel" value="Titel"/>
+
+            <label for="textspace">Code</label>
+            <textarea id="textspace" rows="10" cols="50">Nieuwe code toevoegen?</textarea>
+
+            <label for="work">Werkwijze</label>
+            <select id="work">
+                <option value="freelance">Op freelance basis</option>
+                <option value="opdracht">In opdracht</option>
+            </select>
+
+            <div id="in_opdracht_form" class="db">
+
+                <h2>Project</h2>
+                <label for="project">Project naam</label>
+                <input id="project" type="text" placeholder="Awesome project"/>
+
+                <label for="website_project">Website project</label>
+                <input id="website_project" type="url" placeholder="www.superproject.nl"/>
+
+                <h2>Opdrachtgever</h2>
+                <label for="client">Client</label>
+                <input id="client" type="text" placeholder="Naam opdrachtgever"/>
+
+                <label for="bedrijf">Bedrijfsnaam</label>
+                <input id="bedrijf" type="text" placeholder="Naam bedrijf"/>
+
+                <label for="mail">E-Mail</label>
+                <input id="mail" type="email" placeholder="Bijv. info@jeroensteen.nl"/>
+
+                <label for="website_bedrijf">Website bedrijf</label>
+                <input id="website_bedrijf" type="url" placeholder="www.superbedrijf.nl"/>
+
+
+            </div>
+
+            <label for="langs">Talen</label>
+            <input type="text" id="langs" placeholder="Benoem gebruikte talen, met komma gescheiden"/>
+
+            <button id="add" class="btn db btn-primary mt-20">Voeg toe</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- Dependencies -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/mustache.js"></script>
+<script src="js/vendor/handlebars.js"></script>
+<script src="js/vendor/underscore.js"></script>
+<script src="js/vendor/backbone.js"></script>
+
+<!-- Init; Models -->
+<script src="js/init.js"></script>
+<script src="js/helpers/getTemplate.js"></script>
+<script src="js/models/Client2.js"></script>
+<script src="js/models/Project3.js"></script>
+<script src="js/models/Snippet.js"></script>
+
+<script src="js/collections/Snippets.js"></script>
+
+<script src="js/views/Snippet.js"></script>
+<script src="js/views/Snippets.js"></script>
+
+<!-- Data -->
+<script type='text/javascript' src="js/main.js"></script>
+<script type='text/javascript' src="js/assignment.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        /*$("select")
+                .change(function () {
+                    console.log("change");
+
+                    var str = "";
+                    $("select option:selected").each(function () {
+                        str += $(this).text() + " ";
+                        console.log(str);
+                    });
+                });*/
+
+    });
+</script>
+
+</body>
 </html>

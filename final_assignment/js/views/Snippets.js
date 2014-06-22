@@ -7,7 +7,7 @@ App.Views.Snippets = Backbone.View.extend({
         this.$el.css("min-height", "40px");
         this.$el.css("background-color", "grey");
 
-        console.log(this.$el);
+        //console.log(this.$el);
     },
 
     render: function() {

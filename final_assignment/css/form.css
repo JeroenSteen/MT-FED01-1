@@ -1,0 +1,63 @@
+form {
+  margin-bottom: 20px;
+  font: 14px/14px "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea, select {
+  background: white;
+  color: #666666;
+  border-radius: 6px;
+  max-width: 100%;
+  box-shadow: inset 0 0 10px #dddddd;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin: 0 0 20px 0;
+  text-indent: 10px;
+  padding: 5px 0 5px 0;
+}
+
+select {
+  font-size: 18px;
+  display: inline-block;
+  width: 220px;
+  text-indent: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 3px 5px 0px;
+  height: 40px;
+}
+
+textarea {
+  min-height: 60px;
+  font: 20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-indent: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label, legend {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+label span, legend span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #444444;
+}
+
+*:focus, *:active {
+  outline: 0;
+  border: 0;
+}
