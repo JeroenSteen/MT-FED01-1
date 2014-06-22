@@ -1,9 +1,10 @@
 (function(){
     App.init = function (){
-
+        //Maak model aan; Snippet
         var Snippet = new App.Models.Snippet();
 
-        var snippets = new App.Collections.Snippets([
+        //Maak van Snippet data Collection; Snippets
+        App.Collections.Snippets = new App.Collections.Snippets([
             {
                 title: "Pre example",
                 raw: "Text in a pre element\n is displayed in a fixed-width\n font, and it preserves\n both      spaces and\n line breaks",
@@ -17,23 +18,18 @@
                 freelance: 1
             }
         ]);
+        var snippets = App.Collections.Snippets;
 
-        $.get("js/templates/snippet.html", function(template) {
-            //Compile template voor gebruik met Handlebars
-            snippetTemplate = Handlebars.compile(template);
-
-            //View voor enkele snippet
-            new App.Views.Snippet({
-                model:Snippet,
-                t:snippetTemplate
-            });
-
-            //View voor alle snippets
-            new App.Views.Snippets({collection:snippets})
+        //Maak view aan voor enkele snippet
+        new App.Views.Snippet({
+            model:Snippet
         });
 
-        //Formulier voor toevoegen snippets
-        new App.Views.SnippetForm({model:Snippet});
+        //Maak view aan voor alle snippets
+        new App.Views.Snippets({model:Snippet,collection:snippets});
+
+        //Maak formulier voor toevoegen snippets
+        new App.Views.SnippetForm({model:Snippet,collection:snippets});
 
 
         //String var voor alle rendered templates //var t = "";

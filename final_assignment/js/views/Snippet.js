@@ -5,8 +5,10 @@ App.Views.Snippet = Backbone.View.extend({
     initialize: function () {
     },
     render: function(){
+        //Haal template op van een Snippet
         var tpl = getTemplate("snippet");
 
+        //Render snippet met template en model data
         var rendered = tpl({
             snippet:this.model.toJSON()
         });
