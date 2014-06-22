@@ -22,15 +22,18 @@
             //Compile template voor gebruik met Handlebars
             snippetTemplate = Handlebars.compile(template);
 
+            //View voor enkele snippet
             new App.Views.Snippet({
                 model:Snippet,
                 t:snippetTemplate
             });
 
+            //View voor alle snippets
             new App.Views.Snippets({collection:snippets})
         });
 
-
+        //Formulier voor toevoegen snippets
+        new App.Views.SnippetForm();
 
 
         //String var voor alle rendered templates //var t = "";

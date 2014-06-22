@@ -15,7 +15,7 @@ function addEv(item, event, func) {
 }
 
 //Toevoegen snippet aan lijst
-function addCode() {
+function addCode2() {
     event.preventDefault();
 
     //Ingevoerde snippet
