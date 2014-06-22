@@ -30,7 +30,9 @@ App.Views.SnippetForm = Backbone.View.extend({
         event.preventDefault();
 
         //Gebruikers input
-        var input = this.$el.serializeArray();
+        var input = _.flatten(this.$el.serializeArray());
+        console.log(input);
+
         //Maak met input nieuwe Snippet aan; add aan Collectie
         this.collection.add(new App.Models.Snippet(input));
 
@@ -38,18 +40,21 @@ App.Views.SnippetForm = Backbone.View.extend({
         var snippetView = new App.Views.Snippet({
             model: this.model
         });
-        console.log(snippetView);
+        //console.log(snippetView);
 
         snippetView.render();
         //this.$el.append(snippetView.render().el);
 
+        doHighlight();
+
+        /*
         //Ingevoerde snippet
         var textspace = document.getElementById("textspace").innerHTML;
         //Titel snippet
         var titel = document.getElementById("titel").value;
 
         //Invoer niet leeg, anders..
-        /*if (textspace != "" && titel != "") {
+        if (textspace != "" && titel != "") {
             //Lijst alle snippets; nieuw element snippet
             var codes = $("#codes");
 

@@ -3,6 +3,7 @@ App.Views.Snippet = Backbone.View.extend({
     className: "code",
     rendered: "",
     initialize: function () {
+        //console.log(snippet)
     },
     render: function(){
         //Haal template op van een Snippet

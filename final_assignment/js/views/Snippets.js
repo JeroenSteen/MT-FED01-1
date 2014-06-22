@@ -5,7 +5,7 @@ App.Views.Snippets = Backbone.View.extend({
         this.render();
 
         this.$el.css("min-height", "40px");
-        this.$el.css("background-color", "grey");
+        this.$el.css("background-color", "#CCC");
 
         //console.log(this.$el);
     },
@@ -21,6 +21,7 @@ App.Views.Snippets = Backbone.View.extend({
 
             //Voeg item toe aan lijst
             this.$el.append(snippetView.render().el);
+            doHighlight();
 
         }, this);
 
