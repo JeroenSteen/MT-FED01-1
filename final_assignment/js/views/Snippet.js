@@ -18,11 +18,10 @@ App.Views.Snippet = Backbone.View.extend({
         return this;
     },
     events:{
-        'change #work' : 'save',
-        'click button' : 'save'
+        'click .remove' : 'removeSnippet'
     },
-    save: function(e){
-        console.log(e);
+    removeSnippet: function(e){
+        console.log("Remove "+e);
     }
 
 });

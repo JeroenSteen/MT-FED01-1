@@ -28,16 +28,18 @@
 
     <div class="col8 col omega mt-50">
 
+
         <form id="snippetform">
             <h2>Snippet</h2>
             <label for="titel">Titel</label>
-            <input id="titel" type="text" placeholder="Titel" value="Titel"/>
+            <input id="titel" name="titel" type="text" placeholder="Titel" value="Titel"/>
 
             <label for="textspace">Code</label>
-            <textarea id="textspace" rows="10" cols="50">Nieuwe code toevoegen?</textarea>
+            <textarea id="textspace" name="textspace" rows="10" cols="50">Nieuwe code toevoegen?</textarea>
 
-            <label for="work">Werkwijze</label>
-            <select id="work">
+            <h2>Werkwijze</h2>
+            <label for="work" class="dn">Werkwijze</label>
+            <select id="work" name="work">
                 <option value="freelance">Op freelance basis</option>
                 <option value="opdracht">In opdracht</option>
             </select>
@@ -46,32 +48,31 @@
 
                 <h2>Project</h2>
                 <label for="project">Project naam</label>
-                <input id="project" type="text" placeholder="Awesome project"/>
+                <input id="project" name="project" type="text" placeholder="Awesome project"/>
 
                 <label for="website_project">Website project</label>
-                <input id="website_project" type="url" placeholder="www.superproject.nl"/>
+                <input id="website_project" name="website_project" type="url" placeholder="www.superproject.nl"/>
 
                 <h2>Opdrachtgever</h2>
                 <label for="client">Client</label>
-                <input id="client" type="text" placeholder="Naam opdrachtgever"/>
+                <input id="client" name="client" type="text" placeholder="Naam opdrachtgever"/>
 
                 <label for="bedrijf">Bedrijfsnaam</label>
-                <input id="bedrijf" type="text" placeholder="Naam bedrijf"/>
+                <input id="bedrijf" name="bedrijf" type="text" placeholder="Naam bedrijf"/>
 
                 <label for="mail">E-Mail</label>
-                <input id="mail" type="email" placeholder="Bijv. info@jeroensteen.nl"/>
+                <input id="mail" name="mail" type="email" placeholder="Bijv. info@jeroensteen.nl"/>
 
                 <label for="website_bedrijf">Website bedrijf</label>
-                <input id="website_bedrijf" type="url" placeholder="www.superbedrijf.nl"/>
+                <input id="website_bedrijf" name="website_bedrijf" type="url" placeholder="www.superbedrijf.nl"/>
 
 
             </div>
+            <h2>Talen</h2>
+            <label for="langs" class="dn">Talen</label>
+            <input type="text" id="langs" name="langs" placeholder="Benoem gebruikte talen, met komma gescheiden"/>
 
-            <label for="langs">Talen</label>
-            <input type="text" id="langs" placeholder="Benoem gebruikte talen, met komma gescheiden"/>
-
-            <button id="add" class="btn db btn-primary mt-20">Voeg toe</button>
-
+            <input type="submit" id="add" name="add" class="btn db btn-primary mt-20 w-45" value="Voeg toe"/>
         </form>
 
     </div>
@@ -114,6 +115,8 @@
                         console.log(str);
                     });
                 });*/
+
+        $('pre').each(function(e) {hljs.highlightBlock(e)});
 
     });
 </script>

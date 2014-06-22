@@ -26,7 +26,8 @@ function addCode2() {
     //Invoer niet leeg, anders..
     if (textspace != "" && titel != "") {
         //Lijst alle snippets; nieuw element snippet
-        var codes = document.getElementById("codes");
+        var codes = $("#codes");
+
         var code_div = document.createElement("div");
         code_div.className = "code"; //Classnaam toevoegen aan snippet
 
@@ -52,9 +53,9 @@ function removeCode() {
 
 //Knop event(s); niet dynamisch nog
 if (add.addEventListener) {
-    add.addEventListener('click', addCode, false)
+    //add.addEventListener('click', addCode, false)
 } else if (add.attachEvent) {
-    add.attachEvent('onclick', addCode);
+    //add.attachEvent('onclick', addCode);
 }
 	
 	

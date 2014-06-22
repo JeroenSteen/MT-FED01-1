@@ -33,7 +33,7 @@
         });
 
         //Formulier voor toevoegen snippets
-        new App.Views.SnippetForm();
+        new App.Views.SnippetForm({model:Snippet});
 
 
         //String var voor alle rendered templates //var t = "";
