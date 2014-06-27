@@ -8,22 +8,18 @@
             {
                 title: "Pre example",
                 raw: "Text in a pre element\n is displayed in a fixed-width\n font, and it preserves\n both      spaces and\n line breaks",
-                langs: ["html"],
+                langs: "html",
                 freelance: 0
             },
             {
                 title: "Php echo",
                 raw: "<?php $name = 'Jeroen'; echo $name;?>",
-                langs: ["php"],
+                langs: "php",
                 freelance: 1
             }
         ]);
-        var snippets = App.Collections.Snippets;
 
-        //Maak view aan voor enkele snippet
-        new App.Views.Snippet({
-            model:Snippet
-        });
+        var snippets = App.Collections.Snippets;
 
         //Maak view aan voor alle snippets
         new App.Views.Snippets({model:Snippet,collection:snippets});

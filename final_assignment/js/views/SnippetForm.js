@@ -29,20 +29,21 @@ App.Views.SnippetForm = Backbone.View.extend({
 
         event.preventDefault();
 
-        //Gebruikers input
-        var input = _.flatten(this.$el.serializeArray());
+        //Maak van alle invoer een object
+        input = doFlatten(this.$el);
         console.log(input);
 
         //Maak met input nieuwe Snippet aan; add aan Collectie
         this.collection.add(new App.Models.Snippet(input));
 
+
         //Maak nieuwe view aan voor Snippet
         var snippetView = new App.Views.Snippet({
             model: this.model
         });
-        //console.log(snippetView);
 
         snippetView.render();
+
         //this.$el.append(snippetView.render().el);
 
         doHighlight();

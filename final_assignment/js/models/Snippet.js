@@ -11,7 +11,6 @@ App.Models.Snippet = Backbone.Model.extend({
         raw: "<code>I am RAW!</code>",
         langs: "php, js",
         freelance: 0
-
     },
     initialize:function(){
         //console.log(this);
