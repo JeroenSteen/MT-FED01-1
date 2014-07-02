@@ -25,55 +25,30 @@ App.Views.SnippetForm = Backbone.View.extend({
 
     },
     addSnippet: function(event){
-        //Gebruikt klikte op de add knop
-
+        //Gebruiker klikte op Add knop
         event.preventDefault();
 
-        //Maak van alle invoer een object
+        //Maak van alle invoer object
         input = doFlatten(this.$el);
-        console.log(input);
+        if(input.langs == ""){
+            //input.langs = App.Models.Snippet.defaults.langs; / Undefined op defaults :S
+            input.langs = "php, js";
+        }
 
-        //Maak met input nieuwe Snippet aan; add aan Collectie
-        this.collection.add(new App.Models.Snippet(input));
-
+        var SnippetModel = new App.Models.Snippet( input );
+        //console.log(SnippetModel);
 
         //Maak nieuwe view aan voor Snippet
-        var snippetView = new App.Views.Snippet({
-            model: this.model
-        });
+        //var SnippetView = new App.Views.Snippet({
+        //    model: SnippetModel
+        //});
 
-        snippetView.render();
+        //Maak met input nieuwe Snippet aan; add aan Collectie
+        this.collection.add(SnippetModel);
 
+        //snippetView.render();
         //this.$el.append(snippetView.render().el);
 
         doHighlight();
-
-        /*
-        //Ingevoerde snippet
-        var textspace = document.getElementById("textspace").innerHTML;
-        //Titel snippet
-        var titel = document.getElementById("titel").value;
-
-        //Invoer niet leeg, anders..
-        if (textspace != "" && titel != "") {
-            //Lijst alle snippets; nieuw element snippet
-            var codes = $("#codes");
-
-
-            var code_div = document.createElement("div");
-            code_div.className = "code"; //Classnaam toevoegen aan snippet
-            //Snippet div vullen en toevoegen aan lijst
-            code_div.innerHTML = "<span>" + titel + "</span>" + "<pre>" + textspace + "</pre>"; //Vullen
-            var btn = document.createElement("button"); //Button
-            btn.innerHTML = "Verwijderen"; //Waarde toekennen aan button
-            btn.className = "remove";
-            code_div.appendChild(btn); //Button toevoegen aan snippet div
-
-
-            codes.appendChild(code_div); //Toevoegen aan lijst
-        } else {
-            alert("Invoer is leeg, probeer opnieuw!");
-        }*/
-
     }
 });

@@ -7,13 +7,12 @@
 App.Models.Snippet = Backbone.Model.extend({
 
     defaults:{
-        name: "Nameless Snippet",
+        titel: "Nameless Snippet",
         raw: "<code>I am RAW!</code>",
         langs: "php, js",
         freelance: 0
     },
     initialize:function(){
-        //console.log(this);
     }
 
 	/*

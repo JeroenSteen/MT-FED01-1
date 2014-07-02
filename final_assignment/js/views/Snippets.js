@@ -1,7 +1,7 @@
 App.Views.Snippets = Backbone.View.extend({
     el: $("#codes"),
-
     initialize: function () {
+        console.log("views");
         this.render();
 
         this.$el.css("min-height", "40px");
@@ -9,7 +9,6 @@ App.Views.Snippets = Backbone.View.extend({
 
         //console.log(this.$el);
     },
-
     render: function() {
         //Doorloop heel de collectie
         this.collection.each(function(snippet){
