@@ -26,20 +26,16 @@ App.Views.Snippet = Backbone.View.extend({
         //console.log(rendered);
 
         $("#codes").html($("#codes").html() + rendered);
-        //console.log(this.$el.html(template));
-
+		this.delegateEvents();
+		
         //Voor chaining
         return this;
     },
     removeSnippet: function (e) {
+        //this.model.destroy();
+		//this.$el.remove();
 
-        this.model.destroy();
-
-        console.log("Remove " + e);
+        console.log(this.$el);
     }
 
-});
-
-$(window).load(function() {
-    //console.log($(".remove"));
 });
