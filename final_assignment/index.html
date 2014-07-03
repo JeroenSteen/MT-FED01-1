@@ -107,15 +107,19 @@
 <script>
     $(document).ready(function () {
         /*$("select")
-                .change(function () {
-                    console.log("change");
+         .change(function () {
+         console.log("change");
 
-                    var str = "";
-                    $("select option:selected").each(function () {
-                        str += $(this).text() + " ";
-                        console.log(str);
-                    });
-                });*/
+         var str = "";
+         $("select option:selected").each(function () {
+         str += $(this).text() + " ";
+         console.log(str);
+         });
+         });*/
+
+        $("body").on("click", ".remove", function (e) {
+            $(this).closest(".code").remove();
+        });
     });
 </script>
 

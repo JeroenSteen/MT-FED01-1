@@ -39,11 +39,6 @@
          }
          snippetEl = $("#codes").html(t);*/
 
-
-        $(".code").on("click", ".remove", function(e){
-            $(this).closest(".code").remove();
-        });
-
     };
 
 

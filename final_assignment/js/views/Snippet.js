@@ -11,7 +11,7 @@ App.Views.Snippet = Backbone.View.extend({
         this.model.on('destroy', this.$el.remove)
     },
     events: {
-        'click button.remove': 'removeSnippet'
+        //'click button.remove': 'removeSnippet'
     },
     render: function () {
         console.log("render");
