@@ -17,6 +17,7 @@ li{
     -moz-border-radius: 4px;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #CCC;
 }
 
 h2 {
